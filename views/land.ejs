@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Lyrics Found</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-										EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href = "/css/land.css"/>
+	</head>
+	<body>
+		<div class="main-container">
+			<h1> QuickLyric</h1>
+				<h5>Powered by musixmatch</h5>
+			<div class="button-container">
+				<a href="/">Search another song</a>
+			</div>
+			
+			<div class="lyrics gradient-border">
+				<p class="p-tag">	<%= data.message.body.lyrics.lyrics_body %> </p>
+			</div>
+		</div>
+	</body>
+</html>

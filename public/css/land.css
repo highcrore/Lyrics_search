@@ -1,0 +1,55 @@
+body {
+	margin: 1rem;
+	color: white;
+	background-color: black;
+}
+
+
+h1 {
+	color: #900C3F;
+	font-family: 'Mukta', sans-serif;
+	margin: 1.5rem 0 1rem 0;
+}
+h5{
+	margin: auto 2rem;	
+}
+
+.lyrics {
+	margin: auto;
+  	width: 40%;
+  	border: 1px solid 0B0019;
+  	padding: 10px;
+	background-color:#AD0B49;
+	border-radius: 1rem;
+	line-height: 3rem;
+}
+
+.p-tag {
+	font-size: 1.2rem;
+}
+
+a {
+	
+	margin-left: auto;
+}
+.button-container {
+	margin-left: 70%;
+	
+}
+
+
+a:link, a:visited {
+  background-color: #390080;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: 007D80;
+}
+
+
+
