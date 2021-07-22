@@ -8,14 +8,14 @@ app.use(express.static("public"));
 app.set("view engine", "ejs")
 app.use(bodyParser.urlencoded({extended: true}))
 
+// databse are temporary to store user input and use it to fetch data from api
 const database = [ 
 	
 ]
-const trackdata = [
-	
-]
 
-let counter = 1
+
+//routs
+
 app.get('/',(req,res) => {
 		res.render("home.ejs")
 })
@@ -34,10 +34,11 @@ app.get("/lyric", (req,res) => {
 			.then((data) => data.json())
 
 			.then((data)=>  {
-				
+
 				if (data.message.header.status_code===404) {
 					res.render("Error.ejs")
 				}else {
+					// land is landing page when lyrics are found, we take data to that page
 					res.render("land.ejs", {data:data})	
 				}
 	})
